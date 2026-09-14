@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flores de Afeto — ONG comunitária que atua com educação, alimento, escuta e geração de renda.">
+    <meta name="author" content="Flores de Afeto">
+    <title>
+      Flores de Afeto — ONG comunitária
+    </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/classes.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
+  </head>
+  <body>
+<div class="flex min-h-screen flex-col">  
+      <header class="fixed top-0 z-40 border-b border-border/60 bg-background/90 backdrop-blur">
+        <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5">
+          <a class="flex items-center gap-2.5 active" href="#inicio">
+            <span class="flex size-10 items-center justify-center rounded-2xl bg-primary-soft text-primary">
+              <img src="imagens\logo.png" alt="Logo">
+            </span>
+            <span class="font-display text-lg leading-none font-extrabold">
+              Flores de Afeto
+            </span>
+          </a>
+          <nav class="hidden items-center gap-1 lg:flex">
+            <a href="#inicio" class="rounded-full px-3.5 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:bg-muted hover:text-foreground">
+              Início
+            </a>
+            <a href="#sobre" class="rounded-full px-3.5 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:bg-muted hover:text-foreground">
+              Sobre Nós
+            </a>
+            <a href="#projetos" class="rounded-full px-3.5 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:bg-muted hover:text-foreground">
+              Nossos Projetos
+            </a>
+            <a href="#parcerias" class="rounded-full px-3.5 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:bg-muted hover:text-foreground">
+              Parcerias
+            </a>
+            <a href="#contato" class="rounded-full px-3.5 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:bg-muted hover:text-foreground">
+              Contato
+            </a>
+            <a href="noticias.html" class="rounded-full px-3.5 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:bg-muted hover:text-foreground">
+              Notícias
+            </a>
+          </nav>
+
+        </div>
+      </header>
+      <main id="inicio" class="flex-1">
+        <section class="bg-hero-warm">
+          <div class="mx-auto grid max-w-6xl items-center gap-12 px-5 py-14 md:py-20 lg:grid-cols-2">
+            <div>
+              <span class="inline-flex items-center gap-2 rounded-full bg-sun px-4 py-1.5 text-xs font-bold tracking-wide text-sun-foreground uppercase">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles size-3.5" aria-hidden="true">
+                  <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                  </path>
+                  <path d="M20 2v4">
+                  </path>
+                  <path d="M22 4h-4">
+                  </path>
+                  <circle cx="4" cy="20" r="2">
+                  </circle>
+                </svg>
+                Desde 2026 no ESPRO
+              </span>
+              <h3 class="mt-6 text-4xl text-primary md:text-5xl/tight">
+                Atuamos promovendo campanhas solidárias, ações beneficentes e parcerias com instituições sociais, 
+                levando apoio material, acolhimento e oportunidades para crianças e adolescentes em situação de acolhimento.
+              </h3>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a href="#parcerias" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-bold cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-accent text-accent-foreground shadow-warm hover:brightness-105 hover:-translate-y-0.5 h-13 px-8 text-base">
+                  Quero Ajudar
+                </a>
+                <a href="#projetos" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-bold cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border-2 border-primary/30 bg-background text-primary hover:bg-primary-soft hover:border-primary/50 h-13 px-8 text-base">
+                  Conheça Nossas Ações
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right size-4" aria-hidden="true">
+                    <path d="M5 12h14">
+                    </path>
+                    <path d="m12 5 7 7-7 7">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+              <p class="mt-6 flex items-center gap-2 text-sm font-semibold text-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check size-4.5" aria-hidden="true">
+                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                  </path>
+                  <path d="m9 12 2 2 4-4">
+                  </path>
+                </svg>
+                Todas as doações vão direto para os projetos
+              </p>
+            </div>
+            <div class="relative">
+              <div class="overflow-hidden rounded-4xl shadow-lift">
+                <img src="imagens/aviso-setembro1.jpg" alt="Ação do Setembro Amarelo" width="1408" height="1104" class="w-full object-cover">
+              </div>
+              <div class="absolute -bottom-6 -left-4 hidden rounded-3xl bg-card p-5 shadow-lift sm:block">
+                <span class="flex items-center gap-3">
+                  <span class="flex size-11 items-center justify-center rounded-2xl bg-accent-soft text-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hand-heart size-5" aria-hidden="true">
+                      <path d="M11 14h2a2 2 0 0 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16">
+                      </path>
+                      <path d="m14.45 13.39 5.05-4.694C20.196 8 21 6.85 21 5.75a2.75 2.75 0 0 0-4.797-1.837.276.276 0 0 1-.406 0A2.75 2.75 0 0 0 11 5.75c0 1.2.802 2.248 1.5 2.946L16 11.95">
+                      </path>
+                      <path d="m2 15 6 6">
+                      </path>
+                      <path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a1 1 0 0 0-2.75-2.91">
+                      </path>
+                    </svg>
+                  </span>
+                  <span>
+                    <span class="block font-display text-xl font-extrabold text-primary">
+                      12.400
+                    </span>
+                    <span class="text-xs font-semibold text-muted-foreground">
+                      vidas acompanhadas
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="sobre" class="section-pad">
+          <div class="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-2">
+            <div class="overflow-hidden rounded-4xl shadow-soft">
+              <img src="imagens/aviso-setembro2.jpg" alt="Voluntária entregando um buquê de flores a uma senhora atendida pela ONG" width="50%" height="900" loading="lazy" class="h-full w-full object-cover">
+            </div>
+            <div>
+              <h2 class="mt-3 text-3xl text-primary md:text-4xl">
+                Quem Somos
+              </h2>
+              <p class="mt-4 text-base/relaxed text-muted-foreground">
+                O Flores de Afeto é um projeto social criado com a missão de transformar vidas por meio da solidariedade, do cuidado e do amor ao próximo. 
+                Acreditamos que pequenos gestos têm o poder de gerar grandes mudanças e fortalecer a esperança de crianças, adolescentes em situação de vulnerabilidade.
+              </p>
+              <div class="mt-7 grid gap-4 sm:grid-cols-3">
+                <div class="rounded-2xl bg-secondary p-5">
+                  <h3 class="mt-3 text-base">
+                    Missão
+                  </h3>
+                  <p class="mt-1 text-sm/relaxed text-muted-foreground">
+                    Levar acolhimento, esperança e oportunidades para crianças em situação de
+                    vulnerabilidade por meio de ações solidárias, educativas e recreativas, promovendo impacto
+                    social positivo através do trabalho voluntário.
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-secondary p-5">
+                  <h3 class="mt-3 text-base">
+                    Visão
+                  </h3>
+                  <p class="mt-1 text-sm/relaxed text-muted-foreground">
+                    Ser reconhecida como uma iniciativa estudantil capaz de inspirar outras pessoas a
+                    praticarem a solidariedade, tornando-se referência em projetos sociais desenvolvidos por
+                    jovens aprendizes.
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-secondary p-5">
+                  <h3 class="mt-3 text-base">
+                    Valores
+                  </h3>
+                  <p class="mt-1 text-sm/relaxed text-muted-foreground">
+                    Empatia, Solidariedade, Respeito, Transparência, Responsabilidade Social, Trabalho em Equipe, Ética, Compromisso e Amor ao próximo
+                  </p>
+                </div>
+              </div>
+              <!-- 
+              <a href="#sobre" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-bold cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-info underline-offset-4 hover:underline h-11 py-2 mt-6 px-0">
+                Nossa história completa
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right size-4" aria-hidden="true">
+                  <path d="M5 12h14">
+                  </path>
+                  <path d="m12 5 7 7-7 7">
+                  </path>
+                </svg>
+              </a>
+              -->
+            </div>
+          </div>
+        </section>
+        <!--
+        <section class="bg-green-gradient py-14 text-primary-foreground md:py-18">
+          <div style="display: flex; justify-content: center; align-items: center;">
+             <img src="" style="width: 90%; height: 400px; margin: auto;">
+          </div>    
+        </section>
+        -->
+        <section id="projetos" class="section-pad">
+          <div class="mx-auto max-w-6xl px-5">
+            <div class="max-w-2xl"> 
+              <h2 class="mt-3 text-3xl text-primary md:text-4xl" style="text-align: center;">
+                Nossos Projetos
+              </h2>
+            </div>
+            <div class="mt-10">
+              <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <article class="flex flex-col rounded-3xl border border-border bg-card p-7 shadow-soft transition-all hover:-translate-y-1 hover:shadow-lift">
+                  <span class="flex size-13 items-center justify-center rounded-2xl bg-primary-soft text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-6" aria-hidden="true">
+                      <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+                      <path d="M22 10v6"/>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+                    </svg>
+                  </span>
+                  <span class="mt-5 text-xs font-bold tracking-wide text-muted-foreground uppercase">
+                    Educação
+                  </span>
+                  <h3 class="mt-1.5 text-xl text-foreground">
+                    Semana do estudante
+                  </h3>
+                  <p class="mt-2.5 text-sm/relaxed text-muted-foreground">
+                    Valorizar a importância da educação e incentivar crianças e adolescentes em situação de acolhimento institucional a 
+                    persistirem nos estudos, por meio de relatos inspiradores dos voluntários.
+                  </p>
+                </article>
+
+                <article class="flex flex-col rounded-3xl border border-border bg-card p-7 shadow-soft transition-all hover:-translate-y-1 hover:shadow-lift">
+                  <span class="flex size-13 items-center justify-center rounded-2xl bg-accent-soft text-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-6" aria-hidden="true">
+                      <path d="M12 2a4 4 0 0 0-4 4c0 3.33 3 7 4 9 1-2 4-5.67 4-9a4 4 0 0 0-4-4Z"/>
+                      <path d="m8 12-4 9 4-2 3 4 1-5"/>
+                      <path d="m16 12 4 9-4-2-3 4-1-5"/>
+                    </svg>
+                  </span>
+                  <span class="mt-5 text-xs font-bold tracking-wide text-muted-foreground uppercase">
+                    Marketing
+                  </span>
+                  <h3 class="mt-1.5 text-xl text-foreground">
+                    Setembro Amarelo
+                  </h3>
+                  <p class="mt-2.5 text-sm/relaxed text-muted-foreground">
+                    Criar um espaço digital para divulgar a ONG, suas ações, projetos e parcerias de forma organizada, clara e acessível, 
+                    além de disponibilizar conteúdos de conscientização sobre temas relacionados à causa. 
+                  </p>
+                </article>
+
+                <article class="flex flex-col rounded-3xl border border-border bg-card p-7 shadow-soft transition-all hover:-translate-y-1 hover:shadow-lift">
+                  <span class="flex size-13 items-center justify-center rounded-2xl bg-sun-soft text-sun-foreground">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-6" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                      <line x1="9" x2="9.01" y1="9" y2="9"/>
+                      <line x1="15" x2="15.01" y1="9" y2="9"/>
+                    </svg>
+                  </span>
+                  <span class="mt-5 text-xs font-bold tracking-wide text-muted-foreground uppercase">
+                    Ação Recreativa
+                  </span>
+                  <h3 class="mt-1.5 text-xl text-foreground">
+                    Dia das Crianças
+                  </h3>
+                  <p class="mt-2.5 text-sm/relaxed text-muted-foreground">
+                    Promover um momento de diversão, acolhimento e interação, proporcionando às crianças uma experiência 
+                    especial no Dia das Crianças por meio de brincadeiras, teatro e doações.
+                  </p>
+                </article>
+
+                <article class="flex flex-col rounded-3xl border border-border bg-card p-7 shadow-soft transition-all hover:-translate-y-1 hover:shadow-lift">
+                  <span class="flex size-13 items-center justify-center rounded-2xl bg-primary-soft text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-6" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                  </span>
+                  <span class="mt-5 text-xs font-bold tracking-wide text-muted-foreground uppercase">
+                    Em Breve...
+                  </span>
+                  <h3 class="mt-1.5 text-xl text-foreground">
+                    Em Breve...
+                  </h3>
+                  <p class="mt-2.5 text-sm/relaxed text-muted-foreground">
+                    Em Breve...
+                  </p>
+                </article>
+
+                <article class="flex flex-col rounded-3xl border border-border bg-card p-7 shadow-soft transition-all hover:-translate-y-1 hover:shadow-lift">
+                  <span class="flex size-13 items-center justify-center rounded-2xl bg-accent-soft text-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-6" aria-hidden="true">
+                      <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                      <path d="M5 3v4"/>
+                      <path d="M19 17v4"/>
+                      <path d="M3 5h4"/>
+                      <path d="M17 19h4"/>
+                    </svg>
+                  </span>
+                  <span class="mt-5 text-xs font-bold tracking-wide text-muted-foreground uppercase">
+                    Em Breve...
+                  </span>
+                  <h3 class="mt-1.5 text-xl text-foreground">
+                    Em Breve...
+                  </h3>
+                  <p class="mt-2.5 text-sm/relaxed text-muted-foreground">
+                    Em Breve...
+                  </p>
+                </article>
+
+                <article class="flex flex-col rounded-3xl border border-border bg-card p-7 shadow-soft transition-all hover:-translate-y-1 hover:shadow-lift">
+                  <span class="flex size-13 items-center justify-center rounded-2xl bg-sun-soft text-sun-foreground">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide size-6" aria-hidden="true">
+                      <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+                      <path d="M9 18h6"/>
+                      <path d="M10 22h4"/>
+                    </svg>
+                  </span>
+                  <span class="mt-5 text-xs font-bold tracking-wide text-muted-foreground uppercase">
+                    Em Breve...
+                  </span>
+                  <h3 class="mt-1.5 text-xl text-foreground">
+                    Em Breve...
+                  </h3>
+                  <p class="mt-2.5 text-sm/relaxed text-muted-foreground">
+                    Em Breve...
+                  </p>
+                </article>
+              </div>
+
+
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <section class="pb-20" id="parcerias">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="rounded-4xl bg-accent-soft p-9 text-center md:p-14">
+      <div class="container contact-grid">
+        <div>
+          <h2>Parcerias</h2>
+          <p>
+            Entre em contato para saber mais sobre os projetos, voluntariado e formas de apoiar a organização com parcerias.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="https://forms.gle/pRiSn5NTGvpMf6pHA" target="_blank" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-bold cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed bg-accent text-accent-foreground shadow-warm hover:brightness-105 hover:-translate-y-0.5 h-13 px-8 text-base">
+          Doe Agora
+        </a>
+        <a href="https://forms.gle/pRiSn5NTGvpMf6pHA" target="_blank" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-bold cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed bg-info text-info-foreground shadow-soft hover:bg-info/90 h-13 px-8 text-base">
+          Seja nosso parceiro
+        </a>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; align-items: center; text-align: center; margin-top: 3.5rem; border-top: 1px solid rgba(0, 0, 0, 0.08); padding-top: 3rem;">
+        <div>
+          <h3 style="font-size: 1.85rem; color: var(--verde-escuro); margin-bottom: 1rem;">
+            Associação Vó Flor
+          </h3>
+          <p style="color: var(--cinza); line-height: 1.7; margin-bottom: 1.5rem;">
+            A Associação Beneficente Vó Flor, criada pela notável Florenice Gomes Macedo, carinhosamente conhecida por Vó Flor, é uma 
+            instituição de grande importância para toda a Salvador. Ao longo de sua existência, ela se empenhou incansavelmente no cuidado 
+            das crianças desfavorecidas, preenchendo lacunas deixadas pela ausência de apoio governamental. Sua localização na Rua Lelis 
+            piedade, N°20, na Ribeira, abriga 58 crianças, fornecendo não apenas todas refeições diárias para estas crianças e a pessoas em 
+            situação de rua, também contamos com suporte educacional, aulas de capoeira, judô e balé. Além de ajudarmos 40 idoso carentes com 
+            cestas básicas mensalmente. A relevância deste trabalho é imensurável, não apenas por suprir necessidades básicas, mas por oferecer 
+            oportunidades de desenvolvimento integral a crianças em situação de vulnerabilidade.
+          </p>
+            <div class="parcerias-actions flex flex-wrap justify-center items-center gap-3">
+              <a onclick="copiar(1, event)" class="btn-doe inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-bold cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-info text-accent-foreground shadow-warm hover:brightness-105 hover:-translate-y-0.5 h-13 px-8 text-base">
+                Doar via Pix
+              </a>
+
+              <a onclick="copiar(2, event)" class="btn-doe inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-bold cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-accent text-info-foreground shadow-soft hover:bg-info/90 h-13 px-8 text-base">
+                Entrar em contato
+              </a>
+
+              <a
+                class="footer-social-link btn-insta-action"
+                href="https://www.instagram.com/voflor.011/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram da Associação Vó Flor"
+                title="Instagram"
+                style="color: #000000; background: rgba(0, 0, 0, 0.05);"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" style="stroke: #000000; fill: none;">
+                  <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+                </svg>
+              </a>
+            </div>
+
+
+      </div>
+        <div style="border-radius: 24px; overflow: hidden; box-shadow: var(--sombra);">
+          <img src="imagens/arrecadacao-vo-flor.jpeg" alt="Ação e parcerias da Flores de Afeto" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 24px;">
+        </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <footer id="contato" class="site-footer">
+      <div class="container footer-container">
+
+        <div class="footer-column footer-brand">
+          <h3>Flores de Afeto</h3>
+          <p class="footer-subtitle">ONG comunitária</p>
+
+          <p>
+            Educação, alimento, escuta e oportunidades
+            para comunidades.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Institucional</h4>
+
+          <ul class="footer-list">
+            <li>
+              <a href="#inicio">Início</a>
+            </li>
+
+            <li>
+              <a href="#sobre">Sobre nós</a>
+            </li>
+
+            <li>
+              <a href="#projetos">Nossas Ações</a>
+            </li>
+
+            <li>
+              <a href="#ajudar">Como ajudar</a>
+            </li>
+
+            <li>
+              <a href="noticias.html">Notícias</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Como ajudar</h4>
+
+          <ul class="footer-list">
+            <li>
+              <a href="https://forms.gle/pRiSn5NTGvpMf6pHA" target="_blank">Faça uma doação</a>
+            </li>
+
+            <li>
+              <a href="https://forms.gle/pRiSn5NTGvpMf6pHA" target="_blank">Seja voluntário</a>
+            </li>
+
+            <li>
+              <a href="https://forms.gle/pRiSn5NTGvpMf6pHA" target="_blank">Seja parceiro</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contato</h4>
+
+          <p>
+            Entre em contato para conhecer melhor
+            nossos projetos e ações.
+          </p>
+
+          <a
+            class="footer-contact-link"
+            href="mailto:flores.deafeto.ong@gmail.com"
+          >
+            flores.deafeto.ong@gmail.com
+          </a>
+
+          <div class="footer-social" aria-label="Redes sociais">
+            <a
+              class="footer-social-link"
+              href="https://www.instagram.com/flores.de.afeto/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram da Flores de Afeto"
+              title="Instagram"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="17.5" cy="6.5" r="1.2"/>
+              </svg>
+            </a>
+
+            <a
+              class="footer-social-link"
+              href="https://www.tiktok.com/@flores.de.afeto"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok da Flores de Afeto"
+              title="TikTok"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M16.5 3c.3 1.8 1.3 3.1 3.5 3.3v3.1c-1.5-.1-2.7-.5-3.7-1.2v6.1c0 4-2.6 6.7-6.2 6.7A5.9 5.9 0 0 1 4 15.1c0-3.3 2.6-5.8 6-5.8.4 0 .8 0 1.2.1v3.2a3.4 3.4 0 0 0-1.2-.2c-1.5 0-2.8 1.1-2.8 2.7 0 1.6 1.2 2.8 2.8 2.8 1.8 0 3.2-1.2 3.2-3.6V3h3.3Z"/>
+              </svg>
+            </a>
+            <a
+              class="footer-social-link"
+              href="https://www.facebook.com/share/1CqYmEmZdd/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook da Flores de Afeto"
+              title="Facebook"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+
+          <p>
+            Por <a href="https://www.instagram.com/_jonat__/"> Jonathan</a> | © <span id="year" style="text-decoration: none"></span>
+            Flores de Afeto, ESPRO. 
+          </p>
+
+          <a href="#inicio" class="back-to-top">
+            Voltar ao topo ↑
+          </a>
+
+        </div>
+      </div>
+    </footer>
+    <script src="script.js" defer>
+    </script>
+  </body>
+</html>

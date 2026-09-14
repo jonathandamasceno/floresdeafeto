@@ -1,0 +1,304 @@
+/* ===== CLASSES BÁSICAS USADAS PELO HTML ORIGINAL =====
+   Estas não são classes Tailwind funcionais;
+são apenas
+   nomes de apresentação mantidos para o HTML existente. */
+
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.block {
+  display: block;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-col {
+  flex-direction: column;
+}
+.gap-1 {
+  gap: 4px;
+}
+.gap-2 {
+  gap: 8px;
+}
+.gap-3 {
+  gap: 12px;
+}
+.gap-4 {
+  gap: 16px;
+}
+.gap-6 {
+  gap: 24px;
+}
+.gap-8 {
+  gap: 32px;
+}
+.gap-10 {
+  gap: 40px;
+}
+.gap-12 {
+  gap: 48px;
+}
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.max-w-2xl {
+  max-width: 1440px;
+}
+.max-w-xl {
+  max-width: 1440px;
+}
+.p-5 {
+  padding: 20px;
+}
+.p-7 {
+  padding: 28px;
+}
+.p-9 {
+  padding: 36px;
+}
+.px-5 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.py-14 {
+  padding-bottom: 20px;
+}
+.py-20 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.mt-1 {
+  margin-top: 4px;
+}
+.mt-2 {
+  margin-top: 8px;
+}
+.mt-3 {
+  margin-top: 12px;
+  text-align: center;
+}
+.mt-4 {
+  margin-top: 16px;
+}
+.mt-5 {
+  margin-top: 20px;
+}
+.mt-6 {
+  margin-top: 24px;
+}
+.mt-7 {
+  margin-top: 28px;
+}
+.mt-8 {
+  margin-top: 32px;
+}
+.mt-10 {
+  margin-top: 40px;
+}
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: var(--verde);
+}
+.text-accent {
+  color: var(--laranja);
+}
+.text-info {
+  color: #427b70;
+}
+.text-foreground {
+  color: var(--texto);
+}
+.text-muted-foreground {
+  color: var(--cinza);
+}
+.text-primary-foreground {
+  color: #fff;
+}
+.bg-card {
+  background: #fff;
+}
+.bg-secondary {
+  background: #f0f4ee;
+}
+.bg-primary-soft {
+  background: var(--verde-claro);
+}
+.bg-accent-soft {
+  background: var(--laranja-claro);
+}
+.bg-sun {
+  background: var(--amarelo);
+}
+.bg-sun-soft {
+  background: #fff7d9;
+}
+.rounded-2xl {
+  border-radius: 16px;
+}
+.rounded-3xl {
+  border-radius: 26px;
+}
+.rounded-4xl {
+  border-radius: 32px;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.object-cover {
+  object-fit: cover;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+.font-display {
+  font-family: Georgia, "Times New Roman", serif;
+}
+.text-xs {
+  font-size: .75rem;
+}
+.text-sm {
+  font-size: .9rem;
+}
+.text-lg {
+  font-size: 1.1rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+}
+.text-3xl {
+  font-size: 2rem;
+}
+.text-4xl {
+  font-size: 1.5rem;
+  text-align: start;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.underline {
+  text-decoration: underline;
+}
+.shadow-soft {
+  box-shadow: var(--sombra);
+}
+.shadow-lift {
+  box-shadow: var(--sombra-forte);
+}
+.border {
+  border: 1px solid var(--borda);
+}
+.border-border {
+  border-color: var(--borda);
+}
+.hidden {
+  display: none;
+}
+.btn-doe.copiado {
+    background: #2563eb;
+}
+
+.text-primary,
+.bg-hero-warm h1,
+#sobre h2,
+.pb-20 h2,
+.news-hero h1,
+.news-content h2,
+.news-link {
+  color: #000000 !important;
+}
+.news-banners {
+  padding: 20px 0;
+  background:
+    radial-gradient(circle at 100% 20%, rgba(244,211,109,.35), transparent 25%),
+    linear-gradient(135deg, #fff8ea, #edf4eb);
+}
+
+.banners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+.banner-card {
+  overflow: hidden;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: var(--sombra);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.banner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--sombra-forte);
+}
+
+.banner-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 21 / 9;
+}
+.parcerias-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.pb-20 > div > div,
+.cta-section .container,
+.contact-section .container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pb-20 h2,
+.pb-20 p {
+  margin-left: auto;
+  margin-right: auto;
+}
+.news-card .news-link {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.news-image-placeholder {
+  aspect-ratio: 16 / 10;
+  min-height: 0;
+}
