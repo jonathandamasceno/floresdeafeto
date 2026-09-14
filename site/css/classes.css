@@ -302,3 +302,6 @@ são apenas
   aspect-ratio: 16 / 10;
   min-height: 0;
 }
+.header-button {
+  color: var(--branco) !important;
+}

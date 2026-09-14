@@ -534,7 +534,7 @@ footer input:focus {
 .main-nav {
   margin-left: auto;
   display: flex;
-  align-items: center;
+  align-items: right;
   gap: 4px;
 }
 .main-nav a {
@@ -549,7 +549,7 @@ footer input:focus {
   background: var(--verde-claro);
 }
 .header-button {
-  padding: 11px 18px;
+  padding: 10px;
   border-radius: 999px;
   background: var(--laranja);
   color: #fff;
@@ -1122,7 +1122,7 @@ header > div > a:first-child,
 header > div > nav,
 .main-nav {
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: right;
 }
 
 .mobile-menu-open {

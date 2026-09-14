@@ -61,10 +61,6 @@
   header > div {
     width: calc(100% - 40px);
   }
-  header > div > nav,
-  .main-nav {
-    display: none !important;
-  }
   header > div > div > button,
   header > div > div > button[aria-label="Abrir menu"],
   header > div > div > button[aria-label="Fechar menu"],
@@ -116,9 +112,6 @@
   }
   #sobre > div > div:last-child {
     min-height: auto;
-  }
-  .main-nav {
-    display: none;
   }
   .news-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -389,7 +382,7 @@
   .main-nav {
     order: 3;
     width: 100%;
-    justify-content: center;
+    justify-content: right;
   }
   .header-button {
     order: 2;
