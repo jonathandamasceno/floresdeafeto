@@ -534,7 +534,6 @@ footer input:focus {
 .main-nav {
   margin-left: auto;
   display: flex;
-  align-items: right;
   gap: 4px;
 }
 .main-nav a {
