@@ -306,13 +306,11 @@ são apenas
   color: var(--branco) !important;
 }
 .video-container {
-    width: 100%;
-    height: 500px;
+  width: 100%;
 }
 
 .video-container iframe {
     width: 100%;
     height: 100%;
     display: block;
-    border: none;
 }
