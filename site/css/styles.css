@@ -615,6 +615,10 @@ footer input:focus {
   letter-spacing: .12em;
   text-transform: uppercase;
 }
+
+.news-category, .news-explain{
+  text-align: center;
+}
 .news-content h2 {
   margin-top: 9px;
   color: var(--verde);

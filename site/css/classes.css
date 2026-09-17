@@ -268,11 +268,11 @@ são apenas
 
 .banner-card img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 16 / 4; /* Quanto maior o segundo número, mais alta a imagem; quanto menor, mais fina */
   display: block;
   object-fit: cover;
   object-position: center;
-  aspect-ratio: 21 / 9;
 }
 .parcerias-actions {
   display: flex;
@@ -299,7 +299,6 @@ são apenas
 }
 
 .news-image-placeholder {
-  aspect-ratio: 16 / 10;
   min-height: 0;
 }
 .header-button {
