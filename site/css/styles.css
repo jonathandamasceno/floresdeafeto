@@ -799,14 +799,14 @@ body:has(.bg-hero-warm) a[class*="border-primary"] {
   border-radius: 999px !important;
 }
 
-body:has(.bg-hero-warm) .footer-social {
+.footer-social {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-top: 22px;
 }
 
-body:has(.bg-hero-warm) .footer-social-link {
+.footer-social-link {
   width: 42px;
   height: 42px;
   display: inline-flex;
@@ -819,14 +819,14 @@ body:has(.bg-hero-warm) .footer-social-link {
   transition: transform .2s ease, background-color .2s ease, border-color .2s ease;
 }
 
-body:has(.bg-hero-warm) .footer-social-link:hover {
+.footer-social-link:hover {
   transform: translateY(-3px);
   background: rgba(255,255,255,.14);
   border-color: rgba(255,255,255,.35);
   color: #fff;
 }
 
-body:has(.bg-hero-warm) .footer-social-link svg {
+.footer-social-link svg {
   width: 20px;
   height: 20px;
   fill: currentColor;
