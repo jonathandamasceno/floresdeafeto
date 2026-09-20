@@ -338,8 +338,8 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  body:has(.bg-hero-warm) a.bg-accent,
-  body:has(.bg-hero-warm) a.bg-info {
+  a.bg-accent,
+  a.bg-info {
     min-height: 46px;
     padding: 10px 16px;
   }
