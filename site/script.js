@@ -254,6 +254,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+/*
+* não achei essa função no site, visto que redireciona para o forms
+* acho recomendável redirecionar para um checkout com integração.
+*/
 function copiar(num, event) {
   const copia = num == 1 ? "" : "(71) 99261-4369";
   navigator.clipboard.writeText(copia).then(() => {
