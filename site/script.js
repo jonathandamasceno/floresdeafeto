@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function copiar(num, event) {
-  const copia = num == 1 ? "(71) 98672-7579" : "(71) 99261-4369";
+  const copia = num == 1 ? "" : "(71) 99261-4369";
   navigator.clipboard.writeText(copia).then(() => {
     const btn = event.target;
     btn.textContent = num == 1 ? "Chave copiada!" : "Contato copiado!";
