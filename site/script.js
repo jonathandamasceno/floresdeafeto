@@ -254,15 +254,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+/*
+* não achei essa função no site, visto que redireciona para o forms
+* acho recomendável redirecionar para um checkout com integração.
+*/
+const destinatarios = {
+  1: {
+    chavePix: "00020126840014BR.GOV.BCB.PIX0136c53afa1c-81c6-4356-82c0-3cfec4a867230222Doação Flores de afeto5204000053039865802BR5925Jefferson Menezes dos San6009SAO PAULO62140510krSdkXBnt6630491D3",
+    mensagem: "Chave pix copiada",
+    botao: "Doar ao projeto Flores de Afeto"
+  },
+  2: {
+    chavePix: "00020126360014br.gov.bcb.pix0114+55719867275795204000053039865802BR5901N6001C62160512Doacaovoflor6304DAE6",
+    mensagem: "QR code copia e cola copiado",
+    botao: "Doe para a instituição Vó flor (contribuição sugerida de R$30,00)",
+  }
+}
+
+async function copiar(num, event) {
+  const destinatario = destinatarios[num]
+  if (!destinatario) return;
+
+  try {
+   await navigator.clipboard.writeText(destinatario.chavePix);
+    const btn = event.currentTarget;
+    btn.textContent = destinatario.mensagem;
 function copiar(num, event) {
   const copia = num == 1 ? "" : "(71) 99261-4369";
   navigator.clipboard.writeText(copia).then(() => {
     const btn = event.target;
     btn.textContent = num == 1 ? "Chave copiada!" : "Contato copiado!";
     btn.classList.add("copiado");
+
     setTimeout(() => {
-      btn.textContent = num == 1 ? "Doe via PIX" : "Entrar em Contato";
+      btn.textContent = destinatario.botao;
       btn.classList.remove("copiado");
     }, 2000);
-  });
-}   
+  }
+  catch(erro){
+    console.error("Erro ao copiar:", erro);
+    alert("Não foi possível copiar a chave pix.");
+    };
+}
