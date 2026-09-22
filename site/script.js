@@ -280,17 +280,6 @@ async function copiar(num, event) {
    await navigator.clipboard.writeText(destinatario.chavePix);
     const btn = event.currentTarget;
     btn.textContent = destinatario.mensagem;
-function copiar(num, event) {
-  const copia = num == 1 ? "" : "(71) 99261-4369";
-  navigator.clipboard.writeText(copia).then(() => {
-    const btn = event.target;
-    btn.textContent = num == 1 ? "Chave copiada!" : "Contato copiado!";
-    btn.classList.add("copiado");
-
-    setTimeout(() => {
-      btn.textContent = destinatario.botao;
-      btn.classList.remove("copiado");
-    }, 2000);
   }
   catch(erro){
     console.error("Erro ao copiar:", erro);
