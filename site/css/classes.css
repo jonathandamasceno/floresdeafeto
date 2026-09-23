@@ -72,6 +72,11 @@ são apenas
 .max-w-xl {
   max-width: 1440px;
 }
+.p-0{
+  padding-top: 15px;
+  font-size: 1.1rem;
+}
+
 .p-5 {
   padding: 20px;
 }
