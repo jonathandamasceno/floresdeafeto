@@ -170,7 +170,6 @@ header a .font-display {
 .bg-green-gradient {
   background: linear-gradient(135deg, var(--verde-escuro), var(--verde));
 }
-
 #sobre {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -655,7 +654,7 @@ body > div {
 }
 
 body > div > main {
-  flex: 1 0 auto;
+  margin-bottom: 50px;
 }
 
 .site-footer {
