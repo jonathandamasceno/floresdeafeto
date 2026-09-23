@@ -19,6 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 html {
   scroll-behavior: smooth;
@@ -924,13 +925,6 @@ header > div > div > button {
   background: transparent;
   color: var(--texto);
 }
-
-#contato-form {
-  min-height: 200px;
-  height: auto;
-  text-align: center;
-}
-
 html,
 body {
   width: 100%;
