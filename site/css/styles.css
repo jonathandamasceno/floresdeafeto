@@ -629,7 +629,7 @@ footer input:focus {
 }
 .news-link {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: auto;
   color: var(--verde);
   font-weight: 800;
 }
