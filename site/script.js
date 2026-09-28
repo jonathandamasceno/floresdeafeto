@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
+if (typeof document !== "undefined") {
+  document.addEventListener("DOMContentLoaded", function () {
   const year = document.getElementById("year");
 
   if (year) {
@@ -22,7 +23,37 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Destaque do menu conforme a seção.
+
+  // Carrossel de destaques no hero.
+  const carousel = document.querySelector(".hero-carousel");
+  if (carousel) {
+    const track = carousel.querySelector(".hero-carousel-track");
+    const slides = Array.from(carousel.querySelectorAll(".hero-slide"));
+    const dots = Array.from(carousel.querySelectorAll(".hero-carousel-dots button"));
+    let current = 0;
+    let timer;
+    function showSlide(index) {
+      current = (index + slides.length) % slides.length;
+      track.style.transform = `translateX(-${current * 100}%)`;
+      slides.forEach((slide, i) => slide.setAttribute("aria-hidden", String(i !== current)));
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("is-active", i === current);
+        dot.toggleAttribute("aria-current", i === current);
+      });
+    }
+    function restart() {
+      clearInterval(timer);
+      timer = setInterval(() => showSlide(current + 1), 6000);
+    }
+    carousel.querySelector(".hero-carousel-prev").addEventListener("click", () => { showSlide(current - 1); restart(); });
+    carousel.querySelector(".hero-carousel-next").addEventListener("click", () => { showSlide(current + 1); restart(); });
+    dots.forEach((dot, i) => dot.addEventListener("click", () => { showSlide(i); restart(); }));
+    carousel.addEventListener("mouseenter", () => clearInterval(timer));
+    carousel.addEventListener("mouseleave", restart);
+    showSlide(0);
+    restart();
+  }
+
   const sections = document.querySelectorAll("main section[id]");
   const links = document.querySelectorAll("header nav a[href^='#']");
 
@@ -254,6 +285,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+}
 
 /*Área pra contato exclusivo com a instituição vó flor (contato e pix)*/ 
 

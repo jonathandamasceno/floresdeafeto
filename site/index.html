@@ -96,9 +96,45 @@
                 Todas as doações vão direto para os projetos
               </p>
             </div>
-            <div class="relative">
+            <div class="relative hero-carousel" aria-roledescription="carrossel" aria-label="Destaques das ações e da arrecadação">
+              <div class="hero-carousel-viewport">
+                <div class="hero-carousel-track">
+                  <article class="hero-slide is-active" aria-roledescription="slide" aria-label="1 de 3">
+                    <img src="imagens/arrecadacao-vo-flor.jpeg" alt="Arrecadação para a Associação Vó Flor" width="1408" height="1104">
+                    <div class="hero-slide-caption">
+                      <span>Arrecadação solidária</span>
+                      <strong>Ajude a Associação Vó Flor</strong>
+                      <a href="#parcerias">Quero contribuir <span aria-hidden="true">→</span></a>
+                    </div>
+                  </article>
+                  <article class="hero-slide" aria-roledescription="slide" aria-label="2 de 3" aria-hidden="true">
+                    <img src="imagens/aviso-setembro1.jpg" alt="Ação do Setembro Amarelo" width="1408" height="1104">
+                    <div class="hero-slide-caption">
+                      <span>Ações que acolhem</span>
+                      <strong>Presença, cuidado e escuta</strong>
+                    </div>
+                  </article>
+                  <article class="hero-slide" aria-roledescription="slide" aria-label="3 de 3" aria-hidden="true">
+                    <img src="imagens/dia-do-estudante.png" alt="Ação educativa da Flores de Afeto" width="1408" height="1104">
+                    <div class="hero-slide-caption">
+                      <span>Educação e oportunidades</span>
+                      <strong>Construindo novos caminhos</strong>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="hero-carousel-controls">
+                <button type="button" class="hero-carousel-button hero-carousel-prev" aria-label="Slide anterior">←</button>
+                <div class="hero-carousel-dots" aria-label="Selecionar slide">
+                  <button type="button" class="is-active" aria-label="Ver slide 1" aria-current="true"></button>
+                  <button type="button" aria-label="Ver slide 2"></button>
+                  <button type="button" aria-label="Ver slide 3"></button>
+                </div>
+                <button type="button" class="hero-carousel-button hero-carousel-next" aria-label="Próximo slide">→</button>
+              </div>
               <div class="overflow-hidden rounded-4xl shadow-lift">
-                <img src="imagens/aviso-setembro1.jpg" alt="Ação do Setembro Amarelo" width="1408" height="1104" class="w-full object-cover">
+                <!-- imagem anterior substituida pelo carrossel -->
+
               </div>
               <div class="absolute -bottom-6 -left-4 hidden rounded-3xl bg-card p-5 shadow-lift sm:block">
                 <span class="flex items-center gap-3">
@@ -387,7 +423,7 @@
             oportunidades de desenvolvimento integral a crianças em situação de vulnerabilidade.
           </p>
             <div class="parcerias-actions flex flex-wrap justify-center items-center gap-3">
-              <a onclick="copiar(1, event)" class="btn-doe inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-bold cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-info text-accent-foreground shadow-warm hover:brightness-105 hover:-translate-y-0.5 h-13 px-8 text-base"><script src="script.js" defer></script>
+              <a onclick="copiar(1, event)" class="btn-doe inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-bold cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-info text-accent-foreground shadow-warm hover:brightness-105 hover:-translate-y-0.5 h-13 px-8 text-base">
                 Doar via Pix
               </a>
               <a onclick="copiar(2, event)" class="btn-doe inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-bold cursor-pointer transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-accent text-info-foreground shadow-soft hover:bg-info/90 h-13 px-8 text-base">
