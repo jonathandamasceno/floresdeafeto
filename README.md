@@ -1,5 +1,5 @@
-# [Flores de Afeto](floresdeafeto)
-# [Código do site](floresdeafeto/site)
+# Flores de Afeto
+## [Código do site](floresdeafeto/site)
 
 ## Site da ONG Flores de Afeto, feito pela turma 16687
 
